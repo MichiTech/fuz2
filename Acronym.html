@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Acronym</title>
+<script language="JavaScript">
+function testResults (form) {
+    var testVar = form.inputbox.value;
+    var result = testVar.split (" ");
+var acronym = "";
+for ( var i = 0;  i < result.length; i += 1) {
+acronym += result[i]. charAt(0).toUpperCase();
+}
+    alert (acronym);
+}
+</script>
+</head>
+<body>
+<form name = "myform" action = "" method = "GET">Please enter a sentence: <br>
+<input type ="text" name ="inputbox" value = ""><p>
+<input type ="button" name ="button" value ="Acronym" onClick = "testResults(this.form)">
+</form>
+</body>
+</html>
